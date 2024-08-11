@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function StyledButton({ text, description }) {
+export default function StyledButton({ text, onClick, description }) {
   return (
     <div className="buttonMain">
-      <div className="button"> {text}</div>
+      <div className="button" onClick={onClick}> {text}</div>
       <div className="buttonDescription">{description} </div>
     </div>
   );
